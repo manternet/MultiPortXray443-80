@@ -63,7 +63,7 @@ apt update && apt upgrade -y && apt install -y bzip2 gzip coreutils screen curl 
 
 </b>
 <p align="center">
-<img src="https://github.com/manternet/mon/blob/14d0e2c62f4a71cf4b72cefd45aaad2a8bd7dec0/IMG_20220930_141813.jpg" width="400" title="Autoscript">
+<img src="https://github.com/manternet/MultiPortXray443-80/blob/5f42780639b6a3d4cad34647fbcdaf1966ae4c24/IMG_20220930_142148.jpg" width="400" title="Autoscript">
 </p>
 
 </b>
