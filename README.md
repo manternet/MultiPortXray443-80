@@ -42,6 +42,7 @@
 ☑️ XRAY SHADOWSOCK GRPC TLS <br>
 
 <b>
+<b> >UPDATE TROJAN GO WS< <b>
 [ TROJAN SERVICES ] <br>
 <br>
 💀 PORT 443 <br>
