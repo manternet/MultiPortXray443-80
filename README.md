@@ -41,6 +41,13 @@
 ☑️ XRAY TROJAN GRPC TLS <br>
 ☑️ XRAY SHADOWSOCK GRPC TLS <br>
 
+<b>
+[ TROJAN SERVICES ] <br>
+<br>
+💀 PORT 443 <br>
+☑️ TROJAN GO <br>
+☑️ TROJAN GO WS TLS <br>
+❗❗ TROJAN GO MASIH VERSI BETA YAA ❗❗ <br>
 
 🇲🇾 For Debian 10 Only For First Time Installation 🇲🇾<br>
 <br>
