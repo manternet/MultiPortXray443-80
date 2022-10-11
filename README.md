@@ -48,6 +48,7 @@
 💀 PORT 443 <br>
 ☑️ TROJAN GO WS <br>
 ❗❗ TROJAN GO MASIH VERSI BETA YAA ❗❗ <br>
+☑️ CHECK QUOTA USE XRAY SETIAP USER!!<br>
 <br>
 🇲🇾 For Debian 10 Only For First Time Installation 🇲🇾<br>
 <br>
