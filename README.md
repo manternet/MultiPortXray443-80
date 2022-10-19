@@ -23,7 +23,7 @@
 [ XRAY SERVICES ] <br>
 <br>
 
-💀PORT 8443 & 80 <br>
+💀PORT 443 & 80 <br>
 ☑️ SSH WEBSOCKET TLS&NONE NGINX PROXY<br>
 
 💀PORT 443 & 80 <br>
