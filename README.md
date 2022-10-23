@@ -50,6 +50,11 @@
 ❗❗ TROJAN GO MASIH VERSI BETA YAA ❗❗ <br>
 ☑️ CHECK QUOTA USE XRAY SETIAP USER!!<br>
 <br>
+
+<b>
+☑️ UPDATE AUTO BACKUP VIA BOT TELEGRAM< <b>
+<br>
+
 🇲🇾 For Debian 10 Only For First Time Installation 🇲🇾<br>
 <br>
   
