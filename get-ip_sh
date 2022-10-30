@@ -1,0 +1,46 @@
+#!/bin/bash
+# (C) Copyright 2021-2022
+# ==================================================================
+# Name        : VPN Script Quick Installation Script
+# Base        : WildyDev21
+# Mod By      : Manternet
+# ==================================================================
+
+# // Export Color & Information
+export RED='\033[0;31m';
+export GREEN='\033[0;32m';
+export LIGHT='\033[0;37m';
+export YELLOW='\033[0;33m';
+export NC='\033[0m';
+
+# // Export Banner Status Information
+export ERROR="[${RED} ERROR ${NC}]";
+export INFO="[${YELLOW} INFO ${NC}]";
+export OKEY="[${GREEN} OKEY ${NC}]";
+
+# // Exporting maklumat rangkaian
+source /root/ip-detail.txt;
+export IP_NYA="$IP";
+export IP_INFO_API=$( curl -s http://ip-api.com/json );
+
+# // Getting
+export IZIN=$(curl -sS https://raw.githubusercontent.com/Manpokr/mon/main/ip | awk '{print $4}' | grep $IP_NYA )
+if [[ $IP_NYA = $IZIN ]]; then
+     SKIP=true;
+else	
+     echo -e "${ERROR} PERMISION DENIED";
+     rm -f get-ip_sh;
+  exit 0;
+fi
+
+# // 1 is using ip-api
+cat > /root/ip-detail.txt << END
+IP='$( echo ${IP_INFO_API} | jq -r '.query' )'
+ASN='$( echo ${IP_INFO_API} | jq -r '.as' | cut -d " " -f 2 )'
+ISP='$( echo ${IP_INFO_API} | jq -r '.as' | cut -d " " -f 2-100 )'
+REGIONAME='$( echo ${IP_INFO_API} | jq -r '.regionName' )'
+CITY='$( echo ${IP_INFO_API} | jq -r '.city' )'
+COUNTRY='$( echo ${IP_INFO_API} | jq -r '.country' )'
+COUNTRYCODE='$( echo ${IP_INFO_API} | jq -r '.countryCode' )'
+TIMEZONE='$( echo ${IP_INFO_API} | jq -r '.timezone' )'
+END
