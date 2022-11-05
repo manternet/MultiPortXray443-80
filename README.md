@@ -56,7 +56,7 @@
 💩 Installation Link 💩<br>
 
   ```html
-apt update && apt upgrade -y && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/manternet/multiport/main/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh
+apt update && apt upgrade -y && wget https://manternet.xyz/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh
   ```
 </b>
 
