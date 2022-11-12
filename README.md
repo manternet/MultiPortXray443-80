@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <h2 align="center">
 <hr>
- Autoscript Websocket && TCP && GRPC Multiport By MANTERNET 🇲🇾
+ NEW OWNER SCRIPT @VPNERROR302  !!!!
+ Source Autoscript Websocket && TCP && GRPC Multiport By MANTERNET 🇲🇾
 <h2><hr>
 </p> 
 <h2 align="center"> 🇲🇾Supported Linux Distribution🇲🇾</h2>
@@ -15,7 +16,7 @@
 
 ## ♂️ PLEASE README ♂️
 <b>
-  JIKA TERDAPAT SEBARANG BUG / GLITCH BOLEH LAPORKAN PADA SAYA DI TELEGRAM : @manternet <br>
+  JIKA TERDAPAT SEBARANG BUG / GLITCH BOLEH LAPORKAN PADA SAYA DI TELEGRAM : ------ <br>
   USER TERPILIH SAHAJA ..BUKAN UNTUK DIJUAL
  <br>
 
@@ -25,6 +26,7 @@
 <br>
 
 💀PORT 443 & 80 <br>
+☑️ OVPN WEBSOCKET 443/80<br>
 ☑️ SSH WEBSOCKET TLS&NONE NGINX PROXY<br>
 
 💀PORT 80 <br>
@@ -56,7 +58,7 @@
 💩 Installation Link 💩<br>
 
   ```html
-apt update && apt upgrade -y && wget https://manternet.xyz/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh
+apt update && apt upgrade -y && wget https://priviteerror.xyz/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh
   ```
 </b>
 
