@@ -23,12 +23,12 @@
 ## ↪️ AUTOSCRIPT MULTIPORT DETAILS ↩️
 ## Features
 >>> Service & Port
-- BADVPN                  = 7100-7900"
-NGINX                   = 85"
-OPENSSH                 = 22"
-- STUNNEL4                = 222, 777" 
-- OPENVPN                 = TCP 1194, UDP 2200"
-- OPENVPN WS              = 443, 80, 2097"
+1.BADVPN                  = 7100-7900"
+2.NGINX                   = 85"
+2.OPENSSH                 = 22"
+1.STUNNEL4                = 222, 777" 
+2.OPENVPN                 = TCP 1194, UDP 2200"
+3.OPENVPN WS              = 443, 80, 2097"
 - SSH WS SSL              = 443, 2096"
 - SSH WS NO SSL           = 80, 2095"
 
