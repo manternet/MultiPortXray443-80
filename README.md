@@ -11,7 +11,7 @@
 </p>
 <p align="center"><img src="https://img.shields.io/badge/Service-SSH_Over_Websocket-success.svg">
 <img src="https://img.shields.io/badge/Service-XRAY_REVERSE_PROXY-success.svg">
-<img src="https://img.shields.io/badge/Service-NGINX_REVERSE_PROXY-success.svg">
+<img src="https://img.shields.io/badge/Service-XRAY_TCP_NETWORK-success.svg">
 <img src="https://img.shields.io/badge/Service-XRAY-success.svg"> 
 
 ## ♂️ PLEASE README ♂️
@@ -22,17 +22,17 @@
 
 ## ↪️ AUTOSCRIPT MULTIPORT DETAILS ↩️
 <b>
-[ SSH-OVPN WS SERVICES ] <br>
+[ SSH-OVPN WS OVER TCP SERVICES ] <br>
 <br>
 
 💀PORT 443 & 80 <br>
-☑️ OVPN WEBSOCKET 443/80<br>
-☑️ SSH WEBSOCKET TLS&NONE NGINX PROXY<br>
+☑️ OVPN WEBSOCKET<br>
+☑️ SSH WEBSOCKET TLS<br>
+☑️ SSH WEBSOCKET NO SSL<br>
 
 <b>
-[ XRAY SERVICES ] <br>
+[ XRAY OVER TCP SERVICES ] <br>
 <br>
-
 💀PORT 80 <br>
 ☑️ VMESS WEBSOCKET TLS&NONE <br>
 ☑️ VLESS WEBSOCKET TLS&NONE <br>
