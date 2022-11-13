@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+I PM<!DOCTYPE html>
 <h2 align="center">
 <hr>
  NEW OWNER SCRIPT @VPNERROR302  !!!!
@@ -23,8 +23,8 @@
 ## ↪️ AUTOSCRIPT MULTIPORT DETAILS ↩️
 ## Features
 >>> Service & Port
-1.BADVPN                  = 7100-7900"
-2.NGINX                   = 85"
+1 BADVPN                  = 7100-7900"
+2 NGINX                   = 85"
 2.OPENSSH                 = 22"
 1.STUNNEL4                = 222, 777" 
 2.OPENVPN                 = TCP 1194, UDP 2200"
