@@ -1,4 +1,4 @@
-I PM<!DOCTYPE html>
+<!DOCTYPE html>
 <h2 align="center">
 <hr>
  NEW OWNER SCRIPT @VPNERROR302  !!!!
@@ -21,30 +21,33 @@ I PM<!DOCTYPE html>
  <br>
 
 ## ↪️ AUTOSCRIPT MULTIPORT DETAILS ↩️
-## Features
->>> Service & Port
-1 BADVPN                  = 7100-7900"
-2 NGINX                   = 85"
-2.OPENSSH                 = 22"
-1.STUNNEL4                = 222, 777" 
-2.OPENVPN                 = TCP 1194, UDP 2200"
-3.OPENVPN WS              = 443, 80, 2097"
+<b>
+[ SSH-OVPN WS OVER TCP SERVICES ] <br>
+<br>
+- BADVPN                  = 7100-7900"
+- NGINX                   = 85"
+- OPENSSH                 = 22"
+- STUNNEL4                = 222, 777" 
+- OPENVPN                 = TCP 1194, UDP 2200"
+- OPENVPN WS              = 443, 80, 2097"
 - SSH WS SSL              = 443, 2096"
 - SSH WS NO SSL           = 80, 2095"
 
->>> Xray Core
+<b>
+[ XRAY OVER TCP SERVICES ] <br>
+<br>
 - VLESS TCP XTLS           = 443"
 - VMESS TCP HTTP TLS       = 443"
 - TROJAN TCP TLS           = 443"
 - VLESS GRPC TLS           = 443"
 - VMESS GRPC TLS           = 443"
 - TROJAN GRPC TLS          = 443"
-- SHDOWSCK22 GRPC TLS      = 443"
+- SHDWSK22 GRPC TLS        = 443"
 
 - VLESS WS TLS & NONE      = 443, 80"
 - VMESS WS TLS & NONE      = 443, 80"
 - TROJAN WS TLS & NONE     = 443, 80"
-- SHDOWSCK22 WS TLS & NONE = 443, 80"
+- SHDWSK22 WS TLS & NONE   = 443, 80"
 
 >>> Server Information & Other Features
 - Timezone                : Asia/KL (GMT +8)" 
@@ -55,18 +58,13 @@ I PM<!DOCTYPE html>
 - Auto-Reboot             : [ON]" 
 - IPv6                    : [OFF]"
 
-<b>
-[ SSH-OVPN WS OVER TCP SERVICES ] <br>
-<br>
 
 💀PORT 443 & 80 <br>
 ☑️ OVPN WEBSOCKET <br>
 ☑️ SSH WEBSOCKET TLS<br>
 ☑️ SSH WEBSOCKET NO SSL<br>
 
-<b>
-[ XRAY OVER TCP SERVICES ] <br>
-<br>
+
 💀PORT 80 <br>
 ☑️ VMESS WEBSOCKET TLS&NONE <br>
 ☑️ VLESS WEBSOCKET TLS&NONE <br>
