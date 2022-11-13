@@ -23,19 +23,34 @@
 ## ↪️ AUTOSCRIPT MULTIPORT DETAILS ↩️
 ## Features
 >>> Service & Port
-- OpenVpn                 : TCP 1194, UDP 2200, SSL 442"
-- Stunnel4                : 789, 777" 
-- Squid Proxy             : 3128, 8080"
-- VLess TCP XTLS          : 443"
-- XRAY  Vless TLS         : 443"
-- XRAY  Vless None TLS    : 8000"
-- XRAY  Vmess TLS         : 443"
-- XRAY  Vmess None TLS    : 80"
-- Trojan TLS              : 443"
+- BADVPN                  = 7100-7900"
+- NGINX                   = 85"
+- OPENSSH                 = 22"
+- STUNNEL4                = 222, 777" 
+- OPENVPN                 = TCP 1194, UDP 2200"
+- OPENVPN WS              = 443, 80, 2097"
+- SSH WS SSL              = 443, 2096"
+- SSH WS NO SSL           = 80, 2095"
+
+>>> Xray Core
+- VLESS TCP XTLS           = 443"
+- VMESS TCP HTTP TLS       = 443"
+- TROJAN TCP TLS           = 443"
+- VLESS GRPC TLS           = 443"
+- VMESS GRPC TLS           = 443"
+- TROJAN GRPC TLS          = 443"
+- SHDOWSCK22 GRPC TLS      = 443"
+
+- VLESS WS TLS & NONE      = 443, 80"
+- VMESS WS TLS & NONE      = 443, 80"
+- TROJAN WS TLS & NONE     = 443, 80"
+- SHDOWSCK22 WS TLS & NONE = 443, 80"
+
 >>> Server Information & Other Features
 - Timezone                : Asia/KL (GMT +8)" 
+- Auto Delete Exp         : [ON]" 
 - Fail2Ban                : [ON]" 
-- Dflate                  : [ON]" 
+- Dflate                  : [ON]"
 - IPtables                : [ON]" 
 - Auto-Reboot             : [ON]" 
 - IPv6                    : [OFF]"
