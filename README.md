@@ -33,9 +33,6 @@
 - SSH WS SSL              = 443, 2096"
 - SSH WS NO SSL           = 80, 2095"
 
-<b>
-[ XRAY OVER TCP SERVICES ] <br>
-<br>
 - VLESS TCP XTLS           = 443"
 - VMESS TCP HTTP TLS       = 443"
 - TROJAN TCP TLS           = 443"
