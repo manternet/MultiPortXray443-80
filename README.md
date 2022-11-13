@@ -1,4 +1,4 @@
-I PM<!DOCTYPE html>
+<!DOCTYPE html>
 <h2 align="center">
 <hr>
  NEW OWNER SCRIPT @VPNERROR302  !!!!
@@ -22,7 +22,7 @@ I PM<!DOCTYPE html>
 
 ## ↪️ AUTOSCRIPT MULTIPORT DETAILS ↩️
 ## Features
->>> Service & Port
+- >>> Service & Port
 - BADVPN                  = 7100-7900"
 - NGINX                   = 85"
 - OPENSSH                 = 22"
@@ -32,7 +32,7 @@ I PM<!DOCTYPE html>
 - SSH WS SSL              = 443, 2096"
 - SSH WS NO SSL           = 80, 2095"
 
->>> Xray Core
+- >>> Xray Core
 - VLESS TCP XTLS           = 443"
 - VMESS TCP HTTP TLS       = 443"
 - TROJAN TCP TLS           = 443"
