@@ -26,7 +26,7 @@
 <br>
 
 💀PORT 443 & 80 <br>
-☑️ OVPN WEBSOCKET<br>
+☑️ OVPN WEBSOCKET
 ☑️ SSH WEBSOCKET TLS<br>
 ☑️ SSH WEBSOCKET NO SSL<br>
 
