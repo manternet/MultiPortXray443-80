@@ -21,12 +21,31 @@
  <br>
 
 ## ↪️ AUTOSCRIPT MULTIPORT DETAILS ↩️
+## Features
+>>> Service & Port
+- OpenVpn                 : TCP 1194, UDP 2200, SSL 442"
+- Stunnel4                : 789, 777" 
+- Squid Proxy             : 3128, 8080"
+- VLess TCP XTLS          : 443"
+- XRAY  Vless TLS         : 443"
+- XRAY  Vless None TLS    : 8000"
+- XRAY  Vmess TLS         : 443"
+- XRAY  Vmess None TLS    : 80"
+- Trojan TLS              : 443"
+>>> Server Information & Other Features
+- Timezone                : Asia/KL (GMT +8)" 
+- Fail2Ban                : [ON]" 
+- Dflate                  : [ON]" 
+- IPtables                : [ON]" 
+- Auto-Reboot             : [ON]" 
+- IPv6                    : [OFF]"
+
 <b>
 [ SSH-OVPN WS OVER TCP SERVICES ] <br>
 <br>
 
 💀PORT 443 & 80 <br>
-☑️ OVPN WEBSOCKET <s>
+☑️ OVPN WEBSOCKET <br>
 ☑️ SSH WEBSOCKET TLS<br>
 ☑️ SSH WEBSOCKET NO SSL<br>
 
