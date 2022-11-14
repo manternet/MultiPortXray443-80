@@ -23,7 +23,7 @@
 ## AUTOSCRIPT MULTIPORT DETAILS
 ## SSHOVPN & XRAY WS OVER TCP NETWORKING
 - > Service & Port
-- BADVPN                  = 7100-7900"
+BADVPN                  = 7100-7900
 - NGINX                   = 85"
 - OPENSSH                 = 22"
 - STUNNEL4                = 222, 777" 
