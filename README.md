@@ -30,7 +30,7 @@
 - OPENSSH                 = 22"
 - STUNNEL4                = 222, 777" 
 - OPENVPN                 = TCP 1194, UDP 2200"
-- OPENVPN WS              = 443, 80, 2097"
+- OPENVPN WS              = 443, 80, 2097 [beta]"
 - SSH WS SSL              = 443, 2096"
 - SSH WS NO SSL           = 80, 2095"
 > Xray Core
