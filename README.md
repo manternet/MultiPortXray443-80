@@ -32,7 +32,7 @@
 - SSH WS SSL              = 443, 2096"
 - SSH WS NO SSL           = 80, 2095"
 
-- && Xray Core
+- color=red Xray Core
 - VLESS TCP XTLS           = 443"
 - VMESS TCP HTTP TLS       = 443"
 - TROJAN TCP TLS           = 443"
