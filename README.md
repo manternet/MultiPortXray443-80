@@ -17,8 +17,14 @@
 
 ## ♂️ PLEASE README ♂️
 <b>
-  JIKA TERDAPAT SEBARANG BUG / GLITCH BOLEH LAPORKAN PADA SAYA DI TELEGRAM : ------ <br>
-  USER TERPILIH SAHAJA ..BUKAN UNTUK DIJUAL
+        Report Kepada Admin Jika Ada bug!!!
+        Xray Falback Full Tcp Network !!!
+          Nginx proxy Hanya Grpc Sahaja 🥰
+          Ringan??? Sudah tentu kawan 😚
+          Ssh Dan Openvpn juga Over Tcp😀
+                 Base : Manternet
+             (C) Copyright 2021-2022
+
  <br>
 
 ## AUTOSCRIPT MULTIPORT DETAILS
@@ -30,9 +36,10 @@
 - openssh                 = 22"
 - stunnel4                = 222, 777" 
 - openvpn                 = TCP 1194, UDP 2200"
-- openvpn ws              = 443, 80, 2097"
-- ssh ws ssl              = 443, 2096"
-- ssh ws no ssl           = 80, 2095"
+- openvpn ws tls          = 443, 2097(new)"
+- openvpn ws dropbear     = 80(new)"
+- ssh ws ssl              = 443, 2096 (new}"
+- ssh ws no ssl           = 80, 2095 (new)"
 > Xray Core
 - vless tcp xtls       = 443
 - vless tcp http tls   = 443"
@@ -40,12 +47,12 @@
 - vless grpc tls       = 443"
 - vmess grpc tls       = 443"
 - trojan grpc tls      = 443"
-- shdwsck-22 grpc tls  = 443"
+- shdwsck-22 grpc tls  = 443(new)"
 
 - vless ws tls/none      = 443, 80"
 - vmess ws tls/none      = 443, 80"
 - trojan ws tls/none     = 443, 80"
-- shdwsck-22 ws tls/none = 443, 80"
+- shdwsck-22 ws tls/none = 443, 80(new)"
 
 > Server Information & Other Features
 - Timezone                : Asia/KL (GMT +8)" 
