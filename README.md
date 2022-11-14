@@ -17,13 +17,13 @@
 
 ## ♂️ PLEASE README ♂️
 <b>
-        Report Kepada Admin Jika Ada bug!!!
-        Xray Falback Full Tcp Network !!!
+        Report Kepada Admin Jika Ada bug!!!👌
+        Xray Falback Full Tcp Network !!!😯
           Nginx proxy Hanya Grpc Sahaja 🥰
           Ringan??? Sudah tentu kawan 😚
           Ssh Dan Openvpn juga Over Tcp😀
-                 Base : Manternet
-             (C) Copyright 2021-2022
+                 Base : Manternet😓
+             (C) Copyright 2021-2022😁
 
  <br>
 
