@@ -20,8 +20,8 @@
   USER TERPILIH SAHAJA ..BUKAN UNTUK DIJUAL
  <br>
 
-## ↪️ AUTOSCRIPT MULTIPORT DETAILS ↩️
-## Features
+##AUTOSCRIPT MULTIPORT DETAILS
+##SSHOVPN & XRAY WS OVER TCP
 - >>> Service & Port
 - BADVPN                  = 7100-7900"
 - NGINX                   = 85"
