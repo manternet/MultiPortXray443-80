@@ -25,12 +25,12 @@
 ## SSHOVPN & XRAY WS OVER TCP NETWORKING
 
 > Service & Port
-- BADVPN                  = 7100-7900
-- NGINX                   = 85"
-- OPENSSH                 = 22"
+- badvpn                  = 7100-7900
+- nginx                   = 85"
+- openssh                 = 22"
 - STUNNEL4                = 222, 777" 
 - OPENVPN                 = TCP 1194, UDP 2200"
-- OPENVPN WS              = 443, 80, 2097 [beta]"
+- OPENVPN WS              = 443, 80, 2097"
 - SSH WS SSL              = 443, 2096"
 - SSH WS NO SSL           = 80, 2095"
 > Xray Core
