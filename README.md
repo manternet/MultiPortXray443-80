@@ -23,7 +23,7 @@
 ## AUTOSCRIPT MULTIPORT DETAILS
 ## SSHOVPN & XRAY WS OVER TCP NETWORKING
 
-- > Service & Port
+> Service & Port
 - BADVPN                  = 7100-7900
 - NGINX                   = 85"
 - OPENSSH                 = 22"
@@ -32,7 +32,7 @@
 - OPENVPN WS              = 443, 80, 2097"
 - SSH WS SSL              = 443, 2096"
 - SSH WS NO SSL           = 80, 2095"
-        Xray Core
+> Xray Core
 - VLESS TCP XTLS           = 443
 - VMESS TCP HTTP TLS       = 443"
 - TROJAN TCP TLS           = 443"
@@ -46,7 +46,7 @@
 - TROJAN WS TLS & NONE     = 443, 80"
 - SHDOWSCK22 WS TLS & NONE = 443, 80"
 
->>> Server Information & Other Features
+> Server Information & Other Features
 - Timezone                : Asia/KL (GMT +8)" 
 - Auto Delete Exp         : [ON]" 
 - Fail2Ban                : [ON]" 
