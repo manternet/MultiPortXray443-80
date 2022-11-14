@@ -28,24 +28,24 @@
 - badvpn                  = 7100-7900
 - nginx                   = 85"
 - openssh                 = 22"
-- STUNNEL4                = 222, 777" 
-- OPENVPN                 = TCP 1194, UDP 2200"
-- OPENVPN WS              = 443, 80, 2097"
-- SSH WS SSL              = 443, 2096"
-- SSH WS NO SSL           = 80, 2095"
+- stunnel4                = 222, 777" 
+- openvpn                 = TCP 1194, UDP 2200"
+- openvpn ws              = 443, 80, 2097"
+- ssh ws ssl              = 443, 2096"
+- ssh ws no ssl           = 80, 2095"
 > Xray Core
-- VLESS TCP XTLS           = 443
-- VMESS TCP HTTP TLS       = 443"
-- TROJAN TCP TLS           = 443"
-- VLESS GRPC TLS           = 443"
-- VMESS GRPC TLS           = 443"
-- TROJAN GRPC TLS          = 443"
-- SHDOWSCK22 GRPC TLS      = 443"
+- vless tcp xtls       = 443
+- vless tcp http tls   = 443"
+- trojan tcp tls       = 443"
+- vless grpc tls       = 443"
+- vmess grpc tls       = 443"
+- trojan grpc tls      = 443"
+- shdwsck-22 grpc tls  = 443"
 
-- VLESS WS TLS & NONE      = 443, 80"
-- VMESS WS TLS & NONE      = 443, 80"
-- TROJAN WS TLS & NONE     = 443, 80"
-- SHDOWSCK22 WS TLS & NONE = 443, 80"
+- vless ws tls/none      = 443, 80"
+- vmess ws tls/none      = 443, 80"
+- trojan ws tls/none     = 443, 80"
+- shdwsck-22 ws tls/none = 443, 80"
 
 > Server Information & Other Features
 - Timezone                : Asia/KL (GMT +8)" 
