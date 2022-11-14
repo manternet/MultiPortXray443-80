@@ -22,8 +22,9 @@
 
 ## AUTOSCRIPT MULTIPORT DETAILS
 ## SSHOVPN & XRAY WS OVER TCP NETWORKING
+
 - > Service & Port
-BADVPN                  = 7100-7900
+- BADVPN                  = 7100-7900
 - NGINX                   = 85"
 - OPENSSH                 = 22"
 - STUNNEL4                = 222, 777" 
@@ -31,7 +32,6 @@ BADVPN                  = 7100-7900
 - OPENVPN WS              = 443, 80, 2097"
 - SSH WS SSL              = 443, 2096"
 - SSH WS NO SSL           = 80, 2095"
-
         Xray Core
 - VLESS TCP XTLS           = 443
 - VMESS TCP HTTP TLS       = 443"
@@ -54,33 +54,6 @@ BADVPN                  = 7100-7900
 - IPtables                : [ON]" 
 - Auto-Reboot             : [ON]" 
 - IPv6                    : [OFF]"
-
-<b>
-[ SSH-OVPN WS OVER TCP SERVICES ] <br>
-<br>
-
-💀PORT 443 & 80 <br>
-☑️ OVPN WEBSOCKET <br>
-☑️ SSH WEBSOCKET TLS<br>
-☑️ SSH WEBSOCKET NO SSL<br>
-
-<b>
-[ XRAY OVER TCP SERVICES ] <br>
-<br>
-💀PORT 80 <br>
-☑️ VMESS WEBSOCKET TLS&NONE <br>
-☑️ VLESS WEBSOCKET TLS&NONE <br>
-☑️ TROJAN WEBSOCKET TLS&NONE <br>
-☑️ SHADOWSOCK2022 WEBSOCKET TLS&NONE<br>
-
-💀 PORT 443 <br>
-☑️ XRAY VLESS TCP XTLS <br>
-☑️ XRAY VMESS TCP HTTP TLS <br>
-☑️ XRAY TROJAN TCP TLS <br>
-☑️ XRAY VLESS GRPC TLS NGINX <br>
-☑️ XRAY VMESS GRPC TLS NGINX <br>
-☑️ XRAY TROJAN GRPC TLS NGINX <br>
-☑️ XRAY SHADOWSOCK2022 GRPC TLS NGINX<br>
 
 <b>
 ☑️ MENU CHANGE PORT ALL!!<br>
