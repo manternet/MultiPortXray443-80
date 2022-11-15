@@ -86,7 +86,7 @@ Need Permision To Install
 
 ## Credit :
   
--   Original Script by Tidak Tahu Orangnya
+-   Original Script by Tidak Tahu Orangnya Horas Mungkin 
 -   Modded and update Script by t.me/Manternet
 	
 	
@@ -94,7 +94,6 @@ Need Permision To Install
 	
     <p align="center"><img src="https://img.shields.io/badge/%20COPYRIGHT%20%C2%A9%202022-%20By%20Manternet%20VPN%2C%20Inc-blue"></p>
 
-## ↪️ AUTOSCRIPT MULTIPORT EXAMPLE ↩️
 ## <img src="https://img.shields.io/badge/Autoscript_Multiport_Example-%20-green"></img>
 
 <b>
