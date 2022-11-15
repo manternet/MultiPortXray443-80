@@ -1,5 +1,3 @@
-# // BUTUH PAK HANG CURI
-
 <h2 align="center">AutoScript AIO Multiport Install SSH & OpenVPN & Xray For VPS By VpnError302 <img src="https://img.shields.io/badge/Version-1.0-blue.svg"></h2>
 
 
@@ -94,9 +92,11 @@ Need Permision To Install
 	
 	            
 	
-	<p align="center"><img src="https://img.shields.io/badge/%20COPYRIGHT%20%C2%A9%202022-%20By%20Manternet%20VPN%2C%20Inc-blue"></p>
+    <p align="center"><img src="https://img.shields.io/badge/%20COPYRIGHT%20%C2%A9%202022-%20By%20Manternet%20VPN%2C%20Inc-blue"></p>
 
 ## ↪️ AUTOSCRIPT MULTIPORT EXAMPLE ↩️
+## <img src="https://img.shields.io/badge/Autoscript_Multiport_Example-%20-green"></img>
+
 <b>
 </b>
 <br>
