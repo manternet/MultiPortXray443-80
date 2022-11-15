@@ -1,87 +1,100 @@
-<!DOCTYPE html>
-<h2 align="center">
-<hr>
- NEW OWNER SCRIPT @VPNERROR302  !!!!
- Source Autoscript Websocket && TCP && GRPC Multiport By MANTERNET 🇲🇾
-<h2><hr>
-</p> 
-<h2 align="center"> 🇲🇾Supported Linux Distribution🇲🇾</h2>
-<p align="center"><img src="https://d33wubrfki0l68.cloudfront.net/5911c43be3b1da526ed609e9c55783d9d0f6b066/9858b/assets/img/debian-ubuntu-hover.png"></p> 
-<p align="center"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%209&message=Stretch&color=purple"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%2010&message=Buster&color=purple">  <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2018&message=Lts&color=red"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2020&message=Lts&color=red">
-</p>
-<p align="center"><img src="https://img.shields.io/badge/Service-SSH_Over_Websocket-success.svg">
-<img src="https://img.shields.io/badge/Service-XRAY_REVERSE_PROXY-success.svg">
-<img src="https://img.shields.io/badge/Service-XRAY_TCP_NETWORK-success.svg">
-<img src="https://img.shields.io/badge/Service-SSHOVPN_XRAY_WS_OVER_TCP_NETWORK-success.svg"> 
-<img src="https://img.shields.io/badge/Service-XRAY-success.svg"> 
+# // BUTUH PAK HANG CURI
 
-## ♂️ PLEASE README ♂️
-<b>
-        Report Kepada Admin Jika Ada bug!!!👌
-        Xray Falback Full Tcp Network !!!😯
-          Nginx proxy Hanya Grpc Sahaja 🥰
-          Ringan??? Sudah tentu kawan 😚
-          Ssh Dan Openvpn juga Over Tcp😀
-                 Base : Manternet😓
-             (C) Copyright 2021-2022😁
+<h2 align="center">AutoScript AIO Multiport Install SSH & OpenVPN & Xray For VPS By VpnError302 <img src="https://img.shields.io/badge/Version-1.0-blue.svg"></h2>
 
- <br>
 
-## AUTOSCRIPT MULTIPORT DETAILS
-## SSHOVPN & XRAY WS OVER TCP NETWORKING
+<h2 align="center">Supported Linux Distribution</h2>
 
-> Service & Port
-- badvpn                  = 7100-7900
-- nginx                   = 85"
-- openssh                 = 22"
-- stunnel4                = 222, 777" 
-- openvpn                 = TCP 1194, UDP 2200"
-- openvpn ws tls          = 443, 2097(new)"
-- openvpn ws dropbear     = 80(new)"
-- ssh ws ssl              = 443, 2096 (new}"
-- ssh ws no ssl           = 80, 2095 (new)"
-> Xray Core
-- vless tcp xtls       = 443
-- vless tcp http tls   = 443"
-- trojan tcp tls       = 443"
-- vless grpc tls       = 443"
-- vmess grpc tls       = 443"
-- trojan grpc tls      = 443"
-- shdwsck-22 grpc tls  = 443(new)"
+<p align="center"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%209 & 2010&message=Stretch&color=red"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%2010&message=Buster&color=red"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2018&message=18.04 LTS&color=red"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2020&message=20.04 LTS&color=red"></p>
 
-- vless ws tls/none      = 443, 80"
-- vmess ws tls/none      = 443, 80"
-- trojan ws tls/none     = 443, 80"
-- shdwsck-22 ws tls/none = 443, 80(new)"
+<p align="center"><img src="https://img.shields.io/badge/Service-OpenSSH-success.svg">  <img src="https://img.shields.io/badge/Service-Dropbear-success.svg">  <img src="https://img.shields.io/badge/Service-BadVPN-success.svg">  <img src="https://img.shields.io/badge/Service-Stunnel-success.svg">  <img src="https://img.shields.io/badge/Service-OpenVPN-success.svg">  <img  src="https://img.shields.io/badge/Service-Webmin-success.svg">  <img
+src="https://img.shields.io/badge/Service-Xray-success.svg">
 
-> Server Information & Other Features
-- Timezone                : Asia/KL (GMT +8)" 
-- Auto Delete Exp         : [ON]" 
-- Fail2Ban                : [ON]" 
-- Dflate                  : [ON]"
-- IPtables                : [ON]" 
-- Auto-Reboot             : [ON]" 
-- IPv6                    : [OFF]"
 
-<b>
-☑️ MENU CHANGE PORT ALL!!<br>
-☑️ CHECK USER LOGIN MOD TEBALIK 😁!!<br>
-☑️ CHECK QUOTA USE XRAY SETIAP USER!!<br>
-<br>
+## Installation
 
-🇲🇾 For Debian 10 Only For First Time Installation 🇲🇾<br>
-<br>
+<img src="https://img.shields.io/static/v1?style=for-the-badge&logo=powershell&label=Shell&message=Bash%20Script&color=lightgray"></img>
+- Commmand :
+
+<img src="https://img.shields.io/badge/Service-Update%20Dulu-green"></img>
+ ```html
+ apt-get update && apt-get upgrade -y && update-grub && reboot
+  ```
+ <img src="https://img.shields.io/badge/Install VPN%20Batch-green"></img>
+ ```html
+ wget https://vpnerror.xyz/build.sh 
+ chmod +x build.sh 
+ ./build.sh
+Need Permision To Install
+ ```
+	
+	
+## Info 
+```diff
+- SSHVPN & XRAY OVER TCP
+```
+- made by the owner (Manternet), 
+- it was made by mybro, I'm sorry if there is a failure in the script, 
+- if there is a bug, please report it to the admin :
+
+- Xray Falback Full Tcp Network !! Nginx proxy Hanya Grpc Sahaja Ringan??? Sudah tentu kawan Ssh Dan Openvpn juga Over Tcp
+```diff
+- 
+- Need Permision
+```
+	    
+- if there is an error not skilled to fix.(hope pull issue).	 
+
+## Description
+
+## <img src="https://img.shields.io/badge/-Services%20%26%20Port-brightgreen">
+
+- OpenSSH                    : 22
+- OpenVPN                    : TCP 1194, UDP 2200
+- Stunnel4 SSL/TLS           : 222, 777
+- Dropbear                   : 143,109, 69
+- Badvpn                     : 7100-7900
+- Nginx                      : 85
+- WebScket Python Dropbear   : 80, 2095
+- WebScket Python SSL/TLS    : 443, 2096
+- OpenVPN-WS Python          : 443, 2097
+# Xray Core
+- Vless Tcp XTLS             : 443
+- Vmess Tcp Http TLS         : 443
+- Trojan Tcp TLS             : 443
+- Vless Grpc Tls             : 443
+- Vmess Grpc Tls             : 443
+- Trojan Grpc Tls            : 443
+- Shdwsck-22 Grpc TLS        : 443
+- Vless Ws Tls & None        : 443,80
+- Vmess Ws Tls & None        : 443,80
+- Trojan Ws Tls & None       : 443,80
+- Shdwsck-22 Ws Tls & None   : 443,80
+
+```diff
+- Menu Change port All
+- Cek User Login Xray Ssh Mod Terbalik
+- Cek Setiap User ,quota use Xray
+```
+## <img src="https://img.shields.io/badge/Coming_Soon-%20Update-green"></img>
+
+- Update Path Xray Ws Tls Dan None Tls Beloh Tukar Sesuka hati Tanpa Perlu Edit Json
+
+- Update Trojan Xtls 443
+
+- Update Trojan Go Ws 443
+
+-
+
+## Credit :
   
-  ```html
- apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot
-  ```
-
-💩 Installation Link 💩<br>
-
-  ```html
-apt update && apt upgrade -y && wget https://priviteerror.xyz/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh
-  ```
-</b>
+-   Original Script by Tidak Tahu Orangnya
+-   Modded and update Script by t.me/Manternet
+	
+	
+	            
+	
+	<p align="center"><img src="https://img.shields.io/badge/%20COPYRIGHT%20%C2%A9%202022-%20By%20Manternet%20VPN%2C%20Inc-blue"></p>
 
 ## ↪️ AUTOSCRIPT MULTIPORT EXAMPLE ↩️
 <b>
