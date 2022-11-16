@@ -55,7 +55,7 @@ Need Permision To Install
 - Nginx                      : 85
 - WebScket Python Dropbear   : 80, 2095
 - WebScket Python SSL/TLS    : 443, 2096
-- OpenVPN-WS Python          : 443, 2097
+- OpenVPN-WS TLS Python      : 443, 2097 
 # Xray Core
 - Vless Tcp XTLS             : 443
 - Vmess Tcp Http TLS         : 443
