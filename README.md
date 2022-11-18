@@ -30,6 +30,7 @@ Need Permision To Install
 ## Info 
 ```diff
 - SSHVPN & XRAY OVER TCP
+- TELEGRAM=https://t.me/Manternet
 ```
 - made by the owner (Manternet), 
 - it was made by mybro, I'm sorry if there is a failure in the script, 
