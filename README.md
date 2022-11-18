@@ -37,6 +37,7 @@ Need Permision To Install
 - if there is a bug, please report it to the admin :
 
 - Xray Falback Full Tcp Network !! Nginx proxy Hanya Grpc Sahaja Ringan??? Sudah tentu kawan Ssh Dan Openvpn juga Over Tcp
+- & Lebih Ringan Daripada Nginx, Ram Tidak Banyak Digunakan, 
 ```diff
 - 
 - Need Permision
@@ -74,6 +75,8 @@ Need Permision To Install
 - Menu Change port All
 - Cek User Login Xray Ssh Mod Terbalik
 - Cek Setiap User ,quota use Xray
+- Backup Via Email/Github
+- Webmin
 ```
 ## <img src="https://img.shields.io/badge/Coming_Soon-%20Update-green"></img>
 
