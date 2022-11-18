@@ -77,6 +77,7 @@ Need Permision To Install
 - Cek Setiap User ,quota use Xray
 - Backup Via Email/Github
 - Webmin
+- Notif Update Script /auto update
 ```
 ## <img src="https://img.shields.io/badge/Coming_Soon-%20Update-green"></img>
 
