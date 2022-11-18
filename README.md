@@ -108,7 +108,7 @@ Need Permision To Install
 
 </b>
 <p align="center">
-<img src="https://github.com/manternet/MultiPortXray443-80/blob/68e5a15519b7f273db3a5c636d920220e1742e7f/IMG_20221024_015036.jpg" width="400" title="Autoscript">
+<img src="https://github.com/manternet/MultiPortXray443-80/blob/1c45ae92e63f158443bf10f9bb155e126bf13482/IMG_20221119_043022.jpg" width="400" title="Autoscript">
 </p>
 
 </b>
