@@ -3,6 +3,11 @@
 # // USE API CHECK
 # // JSON OVER TCP XTLS
 
+# // OPN SSL SHADOWSOCK 2022 WS TLS & NONE TLS PASSWD
+openssl rand -base64 16 > /usr/local/etc/xray/passwd
+export PWS_NYA=$(openssl rand -base64 16)
+export PWD_NYA=$(cat /usr/local/etc/xray/passwd)
+
 {
   "log" : {
     "access": "/var/log/xray/access.log",
