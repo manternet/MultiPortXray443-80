@@ -1,0 +1,300 @@
+# // VLESS TCP XTLS VMESS TCP TROJAN TCP & TLS
+# // SHADOWSOCK2022 WS 
+# // USE API CHECK
+# // JSON OVER TCP XTLS
+
+{
+  "log" : {
+    "access": "/var/log/xray/access.log",
+    "error": "/var/log/xray/error.log",
+    "loglevel": "warning"
+    },
+    "inbounds": [
+        {
+     "listen": "127.0.0.1",
+      "port": 10085, # API CEK USE QUOTA
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "127.0.0.1"
+      },
+      "tag": "api"
+         },
+         {
+         "port": 443,
+          "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "uuid",
+                        "flow": "xtls-rprx-direct",
+                        "level": 0
+#vlessxtls
+                    }
+                ],
+                "decryption": "none",
+                "fallbacks": [
+                    {
+                        "dest": 1310, # TROJAN TCP
+                        "xver": 1
+                    },
+                    {
+                        "path": "/vless", # VLESS WS 
+                        "dest": 1311,
+                        "xver": 1
+                    },
+                    {
+                        "path": "/vmess", # VMESS WS
+                        "dest": 1312,
+                        "xver": 1
+                    },
+                    {
+                        "path": "/vmesstcp", # VMESS TCP HTTP
+                        "dest": 1313,
+                        "xver": 1
+                    },
+                    {
+                        "path": "/trojan", # TROJAN WS
+                        "dest": 1314,
+                        "xver": 1
+                    },
+                    {
+                        "path": "/shadowsock", # SHADOWSOCK2022 WS
+                        "dest": 1315,
+                        "xver": 1
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "xtls",
+                "xtlsSettings": {
+                    "alpn": [
+                        "http/1.1"
+                    ],
+                    "certificates": [
+                        {
+                            "certificateFile": "/path/to/xray.crt",
+                            "keyFile": "/path/to/xray.key"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+        "port": 1310,
+         "listen": "127.0.0.1",
+          "protocol": "trojan",
+            "settings": {
+                "clients": [
+                    {
+                        "password": "uuid",
+                        "level": 0
+#trojantcp
+                    }
+                ],
+                "fallbacks": [
+                    {
+                        "dest": 80 # BACK TO NGINX 
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "none",
+                "tcpSettings": {
+                    "acceptProxyProtocol": true
+                }
+            }
+        },
+        {
+        "port": 1311,
+         "listen": "127.0.0.1",
+          "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "uuid",
+                        "level": 0
+#vlessws
+                    }
+                ],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "acceptProxyProtocol": true,
+                    "path": "/vless"
+                }
+            }
+        },
+        {
+        "port": 1312,
+         "listen": "127.0.0.1",
+          "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "uuid",
+                        "level": 0
+#vmessws
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "acceptProxyProtocol": true,
+                    "path": "/vmess"
+                }
+            }
+        },
+        {
+         "port": 1313,
+          "listen": "127.0.0.1",
+           "protocol": "vmess",
+           "settings": {
+             "clients": [
+                    {
+                 "id": "uuid",
+                 "level": 0
+#vmesstcp
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "none",
+                "tcpSettings": {
+                    "acceptProxyProtocol": true,
+                    "header": {
+                        "type": "http",
+                        "request": {
+                            "path": [
+                                "/vmesstcp"
+                              ]
+                          }
+                      }
+                  }
+              }
+         },
+      {
+      "port": 1314,
+      "listen": "127.0.0.1",
+      "protocol": "trojan",
+      "settings": {
+          "decryption":"none",
+           "clients": [
+              {
+                 "password": "uuid",
+                 "level": 0
+#trojanws
+              }
+          ],
+         "udp": true
+       },
+       "streamSettings":{
+           "network": "ws",
+           "wsSettings": {
+             "acceptProxyProtocol": true,
+               "path": "/trojan"
+              }
+         }
+    },
+    {
+    "port": 1315,
+    "listen": "127.0.0.1",
+     "protocol": "shadowsocks",
+      "settings": {
+         "method": "2022-blake3-aes-128-gcm",
+          "password": "$PWD_NYA",
+           "clients": [
+           {
+          "password": "$PWS_NYA"
+#ssws
+           }
+          ],
+          "network": "tcp,udp"
+       },
+       "streamSettings":{
+          "network": "ws",
+             "wsSettings": {
+              "acceptProxyProtocol": true,
+               "path": "/shadowsock"
+                }
+            }
+        }
+    ],
+    "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blocked"
+    }
+  ],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "0.0.0.0/8",
+          "10.0.0.0/8",
+          "100.64.0.0/10",
+          "169.254.0.0/16",
+          "172.16.0.0/12",
+          "192.0.0.0/24",
+          "192.0.2.0/24",
+          "192.168.0.0/16",
+          "198.18.0.0/15",
+          "198.51.100.0/24",
+          "203.0.113.0/24",
+          "::1/128",
+          "fc00::/7",
+          "fe80::/10"
+        ],
+        "outboundTag": "blocked"
+      },
+      {
+        "inboundTag": [
+          "api"
+        ],
+        "outboundTag": "api",
+        "type": "field"
+      },
+      {
+        "type": "field",
+        "outboundTag": "blocked",
+        "protocol": [
+          "bittorrent"
+        ]
+      }
+    ]
+  },
+  "stats": {},
+  "api": {
+    "services": [
+      "StatsService"
+    ],
+    "tag": "api"
+  },
+  "policy": {
+    "levels": {
+      "0": {
+        "statsUserDownlink": true,
+        "statsUserUplink": true
+      }
+    },
+    "system": {
+      "statsInboundUplink": true,
+      "statsInboundDownlink": true,
+      "statsOutboundUplink" : true,
+      "statsOutboundDownlink" : true
+    }
+  }
+}
