@@ -298,3 +298,287 @@
     }
   }
 }
+EOF
+
+##############################
+# // VLESS WS VMESS WS TROJAN WS & NONE
+# // SHADOWSOCK2022 WS NONE
+# // USE API CHECK
+# // JSON
+# // Json File
+{
+  "log" : {
+    "access": "/var/log/xray/access.log",
+    "error": "/var/log/xray/error.log",
+    "loglevel": "warning"
+    },
+    "inbounds": [
+        {
+     "listen": "127.0.0.1",
+      "port": 10085, # API CEK USE QUOTA
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "127.0.0.1"
+      },
+      "tag": "api"
+         },
+         {
+     "listen": "127.0.0.1",
+     "port": "1201",
+     "protocol": "vless",
+      "settings": {
+          "decryption":"none",
+            "clients": [
+               {
+                 "id": "$uuid"                 
+#vless
+             }
+          ]
+       },
+       "streamSettings":{
+         "network": "ws",
+            "wsSettings": {
+                "path": "/vless-none"
+          }
+        }
+     },
+     {
+     "listen": "127.0.0.1",
+     "port": "1202",
+     "protocol": "vmess",
+      "settings": {
+            "clients": [
+               {
+                 "id": "uuid",
+                 "alterId": 0
+#vmess
+             }
+          ]
+       },
+       "streamSettings":{
+         "network": "ws",
+            "wsSettings": {
+                "path": "/vmess-none"
+          }
+        }
+     },
+    {
+    "listen": "127.0.0.1",
+     "port": "1203",
+      "protocol": "trojan",
+      "settings": {
+          "decryption":"none",		
+           "clients": [
+              {
+                 "password": "uuid"
+#trojanws
+              }
+          ],
+         "udp": true
+       },
+       "streamSettings":{
+           "network": "ws",
+           "wsSettings": {
+               "path": "/trojan-none"
+            }
+         }
+     },
+    {
+    "port": "1204",
+    "listen": "127.0.0.1",
+     "protocol": "shadowsocks",
+      "settings": {
+         "method": "2022-blake3-aes-128-gcm",
+          "password": "$PWD_NYA",
+           "clients": [
+           {
+          "password": "$PWS_NYA"
+#ssws
+           }
+          ],
+          "network": "tcp,udp"
+       },
+       "streamSettings":{
+          "network": "ws",
+             "wsSettings": {
+               "path": "/ss-none"
+              }
+          }
+      }	
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blocked"
+    }
+  ],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "0.0.0.0/8",
+          "10.0.0.0/8",
+          "100.64.0.0/10",
+          "169.254.0.0/16",
+          "172.16.0.0/12",
+          "192.0.0.0/24",
+          "192.0.2.0/24",
+          "192.168.0.0/16",
+          "198.18.0.0/15",
+          "198.51.100.0/24",
+          "203.0.113.0/24",
+          "::1/128",
+          "fc00::/7",
+          "fe80::/10"
+        ],
+        "outboundTag": "blocked"
+      },
+      {
+        "inboundTag": [
+          "api"
+        ],
+        "outboundTag": "api",
+        "type": "field"
+      },
+      {
+        "type": "field",
+        "outboundTag": "blocked",
+        "protocol": [
+          "bittorrent"
+        ]
+      }
+    ]
+  },
+  "stats": {},
+  "api": {
+    "services": [
+      "StatsService"
+    ],
+    "tag": "api"
+  },
+  "policy": {
+    "levels": {
+      "0": {
+        "statsUserDownlink": true,
+        "statsUserUplink": true
+      }
+    },
+    "system": {
+      "statsInboundUplink": true,
+      "statsInboundDownlink": true,
+      "statsOutboundUplink" : true,
+      "statsOutboundDownlink" : true
+    }
+  }
+}
+END
+##############################
+
+# Nginx Config By Manpokr@MANTERNET
+# ============================================================
+# Please do not try to change / modif this config
+# This config is tag to xray if you modified this 
+# Xray will Error / Crash
+# Nginx TROJAN/VLESS/VMESS/SHADOWSOCK/ NONE TLS
+# ============================================================
+# (C) Copyright 2022-2023 By MANTERNET
+
+server {
+             listen 80;
+             listen [::]:80;
+             server_name ${domain}; # localhost 127.0.0.1
+
+             ssl_certificate /usr/local/etc/xray/xray.crt;
+             ssl_certificate_key /usr/local/etc/xray/xray.key;
+
+             ssl_ciphers EECDH+CHACHA20:EECDH+CHACHA20-draft:EECDH+ECDSA+AES128:EECDH+aRSA+AES128:RSA+AES128:EECDH+ECDSA+AES256:EECDH+aRSA+AES256:RSA+AES256:EECDH+ECDSA+3DES:EECDH+aRSA+3DES:RSA+3DES:!MD5;
+             ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
+             ssl_prefer_server_ciphers on;
+
+# // WS NONE TLS
+
+       location = /vless-none {
+            if (ddd != ggg) { 
+                return 404;
+            }
+            proxy_redirect off;
+            proxy_pass http://127.0.0.1:1201;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade ddd;
+            proxy_set_header Connection fff;
+            proxy_set_header Host ccc;
+            proxy_set_header X-Real-IP aaa;
+            proxy_set_header X-Forwarded-For bbb;
+ }
+        location = /vmess-none { 
+            if (ddd != ggg) { 
+                return 404;
+            }
+            proxy_redirect off;
+            proxy_pass http://127.0.0.1:1202; 
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade ddd;
+            proxy_set_header Connection fff;
+            proxy_set_header Host ccc;
+            proxy_set_header X-Real-IP aaa;
+            proxy_set_header X-Forwarded-For bbb;
+ }
+        location = /trojan-none { 
+            if (ddd != ggg) { 
+                return 404;
+            }
+            proxy_redirect off;
+            proxy_pass http://127.0.0.1:1203; 
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade ddd;
+            proxy_set_header Connection fff;
+            proxy_set_header Host ccc;
+            proxy_set_header X-Real-IP aaa;
+            proxy_set_header X-Forwarded-For bbb;
+ }
+        location = /ss-none { 
+            if (ddd != ggg) {
+                return 404;
+            }
+            proxy_redirect off;
+            proxy_pass http://127.0.0.1:1204; 
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade ddd;
+            proxy_set_header Connection fff;
+            proxy_set_header Host ccc;
+            proxy_set_header X-Real-IP aaa;
+            proxy_set_header X-Forwarded-For bbb;
+ }
+
+# // SSH WS NONE
+          location / {
+                      proxy_redirect off;
+                      proxy_pass http://127.0.0.1:700; # PORT WS PY
+                      proxy_http_version 1.1;
+                proxy_set_header X-Real-IP aaa;
+                proxy_set_header X-Forwarded-For bbb;
+                proxy_set_header Upgrade ddd;
+                proxy_set_header Connection fff;
+                proxy_set_header Host eee;
+        }
+  } 
+EOF
+
+# // Move
+sed -i 's/aaa/$remote_addr/g' /etc/nginx/conf.d/alone.conf
+sed -i 's/bbb/$proxy_add_x_forwarded_for/g' /etc/nginx/conf.d/alone.conf
+sed -i 's/ccc/$host/g' /etc/nginx/conf.d/alone.conf
+sed -i 's/ddd/$http_upgrade/g' /etc/nginx/conf.d/alone.conf
+sed -i 's/eee/$http_host/g' /etc/nginx/conf.d/alone.conf
+sed -i 's/fff/"upgrade"/g' /etc/nginx/conf.d/alone.conf
+sed -i 's/ggg/"websocket"/g' /etc/nginx/conf.d/alone.conf
+sed -i 's/hhh/$content_type/g' /etc/nginx/conf.d/alone.conf
+sed -i 's/iii/"application/g' /etc/nginx/conf.d/alone.conf
+sed -i 's/jjj/grpc"/g' /etc/nginx/conf.d/alone.conf
+sed -i 's/zzz/$host$request_uri/g' /etc/nginx/conf.d/alone.conf
