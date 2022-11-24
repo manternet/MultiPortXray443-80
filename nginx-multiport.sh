@@ -1,4 +1,4 @@
-# Nginx Config By Manpokr@MANTERNET
+# Nginx Config By @MANTERNET
 # ============================================================
 # Please do not try to change / modif this config
 # This config is tag to xray if you modified this 
@@ -199,7 +199,7 @@ server {
             proxy_set_header X-Real-IP aaa;
             proxy_set_header X-Forwarded-For bbb;
  }
-# // SSH WS
+# // SSH WS TLS & NONE TLS
           location / {
                       proxy_redirect off;
                       proxy_pass http://127.0.0.1:700; # PORT WS PY
@@ -211,7 +211,7 @@ server {
                 proxy_set_header Host eee;
         }
   } 
-# // OVPN WS TLS
+# // OVPN WS TLS & NONE TLS
     server {
         server_name ovpn.${domain};
 
