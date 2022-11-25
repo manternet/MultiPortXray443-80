@@ -8,6 +8,22 @@ openssl rand -base64 16 > /usr/local/etc/xray/passwd
 export PWS_NYA=$(openssl rand -base64 16)
 export PWD_NYA=$(cat /usr/local/etc/xray/passwd)
 
+--------------
+Info Untuk Full Json 
+Vless/Vmess/Trojan/Shadowsock/Sshvpn
+Grpc Tls & core xray
+Ws Tls & core xray
+Ws None & core xray
+ssh ws & -
+ovpn ws & -
+Trojango ws & core trojan
+
+Ramai Yg Minta Baru Min Upload 
+Nginx hanya fallback grpc sahaja 
+Lebih ringan dari nginx
+Aman dc
+Lebih enak untuk jualan😀
+---------------
 {
   "log" : {
     "access": "/var/log/xray/access.log",
