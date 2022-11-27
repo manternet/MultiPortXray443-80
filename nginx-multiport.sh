@@ -4,6 +4,7 @@
 # This config is tag to xray if you modified this 
 # Xray will Error / Crash
 # Nginx TROJAN/VLESS/VMESS/SHADOWSOCK/SSHVPN GRPC/WS
+# Multi Path /* vless /vmess /trojan /shadowsock
 # ============================================================
 # (C) Copyright 2022-2023 By MANTERNET
 
@@ -26,6 +27,7 @@ server {
        location = /vless {
             if (ddd != ggg) { 
                 return 404;
+            rewrite /(.*) /vless break;
             }
             proxy_redirect off;
             proxy_pass http://127.0.0.1:1101;
@@ -39,6 +41,7 @@ server {
         location = /vmess { 
             if (ddd != ggg) { 
                 return 404;
+            rewrite /(.*) /vmess break;
             }
             proxy_redirect off;
             proxy_pass http://127.0.0.1:1102; 
@@ -52,6 +55,7 @@ server {
         location = /trojan { 
             if (ddd != ggg) { 
                 return 404;
+            rewrite /(.*) /trojan break;
             }
             proxy_redirect off;
             proxy_pass http://127.0.0.1:1103; 
@@ -65,6 +69,7 @@ server {
         location = /shadowsock { 
             if (ddd != ggg) {
                 return 404;
+            rewrite /(.*) /shadowsock break;
             }
             proxy_redirect off;
             proxy_pass http://127.0.0.1:1104; 
@@ -75,62 +80,6 @@ server {
             proxy_set_header X-Real-IP aaa;
             proxy_set_header X-Forwarded-For bbb;
  }
-
-# // WS NONE TLS
-
-       location = /vless-none {
-            if (ddd != ggg) { 
-                return 404;
-            }
-            proxy_redirect off;
-            proxy_pass http://127.0.0.1:1105;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade ddd;
-            proxy_set_header Connection fff;
-            proxy_set_header Host ccc;
-            proxy_set_header X-Real-IP aaa;
-            proxy_set_header X-Forwarded-For bbb;
- }
-        location = /vmess-none { 
-            if (ddd != ggg) { 
-                return 404;
-            }
-            proxy_redirect off;
-            proxy_pass http://127.0.0.1:1106; 
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade ddd;
-            proxy_set_header Connection fff;
-            proxy_set_header Host ccc;
-            proxy_set_header X-Real-IP aaa;
-            proxy_set_header X-Forwarded-For bbb;
- }
-        location = /trojan-none { 
-            if (ddd != ggg) { 
-                return 404;
-            }
-            proxy_redirect off;
-            proxy_pass http://127.0.0.1:1107; 
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade ddd;
-            proxy_set_header Connection fff;
-            proxy_set_header Host ccc;
-            proxy_set_header X-Real-IP aaa;
-            proxy_set_header X-Forwarded-For bbb;
- }
-        location = /ss-none { 
-            if (ddd != ggg) {
-                return 404;
-            }
-            proxy_redirect off;
-            proxy_pass http://127.0.0.1:1108; 
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade ddd;
-            proxy_set_header Connection fff;
-            proxy_set_header Host ccc;
-            proxy_set_header X-Real-IP aaa;
-            proxy_set_header X-Forwarded-For bbb;
- }
-
 # GRPC TLS
 
           location ^~ /vless-grpc {                                       
