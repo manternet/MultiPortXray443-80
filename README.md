@@ -54,7 +54,7 @@ Need Permision To Install
 - Stunnel4 SSL/TLS           : 222, 777
 - Dropbear                   : 143,109, 69
 - Badvpn                     : 7100-7900
-- Nginx                      : 85
+- Nginx File                 : 85
 - WebScket Python Dropbear   : 80, 2095
 - WebScket Python SSL/TLS    : 443, 2096
 - OpenVPN-WS TLS Python      : 443, 2097 
@@ -70,8 +70,12 @@ Need Permision To Install
 - Vmess Ws Tls & None        : 443,80
 - Trojan Ws Tls & None       : 443,80
 - Shdwsck-22 Ws Tls & None   : 443,80
+# Slow Dns 
+- Ssh Slow Dns               : 443, 80, 53
+- Xray Dns All               : 443, 80, 53 
 
 ```diff
+- Xray Multi Path /sukakau
 - Menu Change port All
 - Cek User Login Xray Ssh Mod Terbalik
 - Cek Setiap User ,quota use Xray
