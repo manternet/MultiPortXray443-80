@@ -71,8 +71,11 @@ Need Permision To Install
 - Trojan Ws Tls & None       : 443,80
 - Shdwsck-22 Ws Tls & None   : 443,80
 # Slow Dns 
-- Ssh Slow Dns               : 443, 80, 53
-- Xray Dns All               : 443, 80, 53 
+- Ssh SlowDns               : 443, 80, 53
+- Xray SlowDns Tcp          : 443, 80, 53 
+- Xray SlowDns Vless        : 443, 80, 53 
+- Xray SlowDns Vmess        : 443, 80, 53 
+- Xray SlowDns Trojan       : 443, 80, 53 
 
 ```diff
 - Xray Multi Path /sukakau
@@ -89,7 +92,7 @@ Need Permision To Install
 
 - Update Trojan Xtls 443
 
-- Update Trojan Go Ws 443
+- Update Trojan Go Ws 443 
 
 -
 
