@@ -88,7 +88,7 @@ Need Permision To Install
 ```
 ## <img src="https://img.shields.io/badge/Coming_Soon-%20Update-green"></img>
 
-- Update Path Xray Ws Tls Dan None Tls Beloh Tukar Sesuka hati Tanpa Perlu Edit Json
+- Update Path Xray Ws Tls Dan None Tls Boleh Tukar Sesuka hati Tanpa Perlu Edit Json
 
 - Update Trojan Xtls 443
 
