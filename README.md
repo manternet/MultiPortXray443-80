@@ -49,15 +49,16 @@ Need Permision To Install
 
 ## <img src="https://img.shields.io/badge/-Services%20%26%20Port-brightgreen">
 
-- OpenSSH                    : 22
+- OpenSSH                    : 80,22
 - OpenVPN                    : TCP 1194, UDP 2200
-- Stunnel4 SSL/TLS           : 222, 777
-- Dropbear                   : 143,109, 69
+- Stunnel4 SSL/TLS           : 443, 222, 777
+- Dropbear                   : 80, 143,109, 69
 - Badvpn                     : 7100-7900
 - Nginx File                 : 85
-- WebScket Python Dropbear   : 80, 2095
-- WebScket Python SSL/TLS    : 443, 2096
-- OpenVPN-WS TLS Python      : 443, 2097 
+- WebScket Epro NONE         : 80
+- WebScket Epro SSL/TLS      : 443
+- OpenVPN-WS Epro            : 80 
+- OpenVPN-WS TLS Epro        : 443 
 # Xray Core
 - Vless Tcp XTLS             : 443
 - Vmess Tcp Http TLS         : 443
@@ -70,15 +71,16 @@ Need Permision To Install
 - Vmess Ws Tls & None        : 443,80
 - Trojan Ws Tls & None       : 443,80
 - Shdwsck-22 Ws Tls & None   : 443,80
+# Trojan-Go
+- Trojan-Go Ws Tls           : 8080
 # Slow Dns 
-- Ssh SlowDns               : 443, 80, 53
-- Xray SlowDns Tcp          : 443, 80, 53 
-- Xray SlowDns Vless        : 443, 80, 53 
-- Xray SlowDns Vmess        : 443, 80, 53 
-- Xray SlowDns Trojan       : 443, 80, 53 
+- Ssh WS TLS SlowDns         : 443, 53
+- Xray SlowDns Tcp           : 443, 53 
+- Xray SlowDns Vless         : 443, 53 
+- Xray SlowDns Vmess         : 443, 53 
+- Xray SlowDns Trojan        : 443, 53 
 
 ```diff
-- Xray Multi Path /sukakau
 - Menu Change port All
 - Cek User Login Xray Ssh Mod Terbalik
 - Cek Setiap User ,quota use Xray
@@ -88,11 +90,7 @@ Need Permision To Install
 ```
 ## <img src="https://img.shields.io/badge/Coming_Soon-%20Update-green"></img>
 
-- Update Path Xray Ws Tls Dan None Tls Boleh Tukar Sesuka hati Tanpa Perlu Edit Json
-
 - Update Trojan Xtls 443
-
-- Update Trojan Go Ws 443 
 
 -
 
