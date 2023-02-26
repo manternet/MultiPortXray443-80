@@ -51,8 +51,8 @@ Need Permision To Install
 
 - OpenSSH                    : 80,22
 - OpenVPN                    : TCP 1194, UDP 2200
-- Stunnel4 SSL/TLS           : 443, 222, 777
-- Dropbear                   : 80, 143,109, 69
+- Stunnel4 SSL/TLS           : 443, 777
+- Dropbear                   : 80, 109
 - Badvpn                     : 7100-7900
 - Nginx File                 : 85
 - WebScket Epro NONE         : 80
