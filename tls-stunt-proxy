@@ -9,8 +9,9 @@
 mkdir -p $tsp_conf_dir
 cat >$tsp_conf <<-EOF
 
-listen: 0.0.0.0:2091
-redirecthttps: 0.0.0.0:2090
+#TSP_CFG_Ver:${tsp_cfg_version}
+listen: 0.0.0.0:443
+redirecthttps: 0.0.0.0:80
 inboundbuffersize: 4
 outboundbuffersize: 32
 vhosts:
@@ -22,8 +23,24 @@ vhosts:
     protocols: tls12,tls13
     http:
       paths:
-      handler: fileServer
+
+      - path: /trojan # // Trojan Path
+        handler: proxyPass
+        args: 127.0.0.1:40000
+
+        handler: fileServer # // Web Folder
+        args: ${dir}/web_camouflage
+
+        trojan: # // Trojan_TCP
+        handler: proxyPass
+        args: 127.0.0.1:40001
+
+        default: # // Xray_TCP
+        handler: proxyPass
+        args: 127.0.0.1:40003;proxyProtocol
 EOF
 
-systemctl daemon-reload && systemctl reset-failed
-systemctl enable tls-shunt-proxy && systemctl restart tls-shunt-proxy
+systemctl daemon-reload
+systemctl reset-failed
+systemctl enable tls-shunt-proxy
+systemctl restart tls-shunt-proxy
