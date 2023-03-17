@@ -42,12 +42,13 @@ bikin sndiri baru jual kntol
          },
          {
          "port": 443,
+         "listen": "0.0.0.0",
           "protocol": "vless",
             "settings": {
                 "clients": [
                     {
                         "id": "uuid",
-                        "flow": "xtls-rprx-direct",
+                        "flow": "xtls-rprx-vision",
                         "level": 0
 #vlessxtls
                     }
@@ -92,8 +93,8 @@ bikin sndiri baru jual kntol
             },
             "streamSettings": {
                 "network": "tcp",
-                "security": "xtls",
-                "xtlsSettings": {
+                "security": "tls",
+                "tlsSettings": {
                     "alpn": [
                         "http/1.1",
                            "h2"
@@ -341,6 +342,7 @@ EOF
 # // USE API CHECK
 # // JSON NONE TLS
 # // Json File
+cat > /usr/local/etc/xray/test.json <<END
 {
   "log" : {
     "access": "/var/log/xray/access.log",
@@ -364,8 +366,8 @@ EOF
       "settings": {
         "clients": [
           {
-            "password": "erroruuid",
-            "flow": "xtls-rprx-direct"
+            "id": "erroruuid",
+            "flow": "xtls-rprx-vision"
           }
         ],
         "decryption": "none",
@@ -409,7 +411,7 @@ EOF
           "decryption":"none",
             "clients": [
                {
-                 "id": "$uuid"                 
+                 "id": "uuid"                 
 #vless
              }
           ]
