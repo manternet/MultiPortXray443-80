@@ -72,7 +72,7 @@ Need Permision To Install
 - Trojan Ws Tls & None       : 443,80
 - Shdwsck-22 Ws Tls & None   : 443,80
 # Trojan-Go
-- Trojan-Go Ws Tls           : 8080
+- Trojan-Go Ws Tls           : 443 - Beta
 # Slow Dns 
 - Ssh WS TLS SlowDns         : 443, 53
 - Xray SlowDns Tcp           : 443, 53 
