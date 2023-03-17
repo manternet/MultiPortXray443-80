@@ -87,6 +87,7 @@ Need Permision To Install
 - Backup Via Email/Github
 - Webmin
 - Notif Update Script /auto update
+- Update By Keting Tong !!!
 ```
 ## <img src="https://img.shields.io/badge/Coming_Soon-%20Update-green"></img>
 
@@ -95,7 +96,8 @@ Need Permision To Install
 -
 
 ## Credit :
-  
+
+-   Owner Keting Now Mantr Pencen
 -   Original Script by Tidak Tahu Orangnya Horas Mungkin 
 -   Modded and update Script by t.me/Manternet
 	
