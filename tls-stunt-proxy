@@ -1,0 +1,29 @@
+# // Install Shunt Proxy
+
+    bash <(curl -L -s https://raw.githubusercontent.com/liberal-boy/tls-shunt-proxy/master/dist/install.sh)
+    chown -R tls-shunt-proxy:tls-shunt-proxy /etc/ssl/tls-shunt-proxy
+    command -v setcap >/dev/null 2>&1 && setcap "cap_net_bind_service=+ep" /usr/local/bin/tls-shunt-proxy
+    config_exist_check ${tsp_conf}
+    [[ -f ${tsp_conf} ]] && rm -rf ${tsp_conf}
+   
+mkdir -p $tsp_conf_dir
+cat >$tsp_conf <<-EOF
+
+listen: 0.0.0.0:2091
+redirecthttps: 0.0.0.0:2090
+inboundbuffersize: 4
+outboundbuffersize: 32
+vhosts:
+  - name: ${domain}
+    tlsoffloading: true
+    managedcert: true
+    keytype: p256
+    alpn: h2,http/1.1
+    protocols: tls12,tls13
+    http:
+      paths:
+      handler: fileServer
+EOF
+
+systemctl daemon-reload && systemctl reset-failed
+systemctl enable tls-shunt-proxy && systemctl restart tls-shunt-proxy
