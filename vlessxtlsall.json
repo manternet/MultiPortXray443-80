@@ -56,6 +56,15 @@ bikin sndiri baru jual kntol
                 "decryption": "none",
                 "fallbacks": [
                     {
+                        "alpn": "h2", # TROJAN TCP
+                        "dest": 1016,
+                        "xver": 2
+                    },
+                    {
+                        "dest": 82,
+                        "xver": 2
+                    },
+                    {
                         "path": "/vless", # VLESS WS 
                         "dest": 1011,
                         "xver": 2
@@ -78,15 +87,6 @@ bikin sndiri baru jual kntol
                     {
                         "path": "/shadowsock", # SHADOWSOCK2022 WS
                         "dest": 1015,
-                        "xver": 2
-                    },
-                    {
-                        "alpn": "h2", # TROJAN TCP
-                        "dest": 1016,
-                        "xver": 2
-                    },
-                    {
-                        "dest": 81,
                         "xver": 2
                     }
                 ]
@@ -127,7 +127,7 @@ bikin sndiri baru jual kntol
                 ],
                 "fallbacks": [
                     {
-                        "dest": 82,
+                        "dest": 83, # // http2
                         "xver": 2
                     }
                 ]
@@ -373,7 +373,7 @@ cat > /usr/local/etc/xray/test.json <<END
         "decryption": "none",
         "fallbacks": [
           {
-            "dest": 83,
+            "dest": 84,
             "xver": 2
           },
           {
@@ -766,30 +766,41 @@ END
 # ============================================================
 # (C) Copyright 2022-2023 By Keting
 
+server {                                                                  
+        listen 81;                                                        
+        listen [::]:81;                                                   
+        return 301 https://$host$request_uri;                             
+ }
 server {
-    listen 127.0.0.1:81 proxy_protocol default_server;
-    listen 127.0.0.1:82 http2 proxy_protocol default_server;
-    listen 127.0.0.1:83 proxy_protocol default_server;
+    listen 127.0.0.1:82 proxy_protocol default_server; # Http 1.1
+    listen 127.0.0.1:84 proxy_protocol default_server; # Http 1.1
     set_real_ip_from 127.0.0.1;
     real_ip_header proxy_protocol;
     server_name _;
     return 400;
-}
+ }
 
 # // Http 1.1
 server {
-    listen 127.0.0.1:83 proxy_protocol default_server;
-    listen 127.0.0.1:81 proxy_protocol; # HTTP/1.1
+    listen 127.0.0.1:82 proxy_protocol; # Http 1.1/443
+    listen 127.0.0.1:84 proxy_protocol; # Http 1.1/80
     set_real_ip_from 127.0.0.1;
     real_ip_header proxy_protocol;
-    server_name 127.0.0.1 localhost;
+    server_name ${domain-name};
+
+    location / {
+        add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+        root /home/vps/public_html;
+        index index.html index.htm;
+    }
+}
 
 # // Http2 Grpc
 server {
-    listen 127.0.0.1:82 http2 proxy_protocol;
+    listen 127.0.0.1:83 http2 proxy_protocol; # Http2/443
     set_real_ip_from 127.0.0.1;
     real_ip_header proxy_protocol;
-    server_name 127.0.0.1 localhost;
+    server_name ${domain-name};
 
 # // Grpc Setting
     grpc_read_timeout 1h;
