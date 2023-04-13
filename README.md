@@ -60,7 +60,7 @@ Need Permision To Install
 - OpenVPN-WS Epro            : 80 
 - OpenVPN-WS TLS Epro        : 443 
 # Xray Core
-- Vless Tcp XTLS             : 443, 8443, 2083, 2087 - Double port All Tls & tcp& grpc
+- Vless Tcp XTLS Vision      : 443, 8443, 2083, 2087 - Double port All Tls & tcp& grpc
 - Vmess Tcp Http TLS         : 443
 - Vless Tcp Http TLS         : 443
 - Trojan Tcp TLS             : 443
