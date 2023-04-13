@@ -86,11 +86,13 @@ Need Permision To Install
 
 ```diff
 - Menu Change port All
-- Xray Vless Ws Dynamic Path /vless/?/-whatever
+- Xray Vless Ws Dynamic Path /vless/?/-whatever ## New
 - Cek User Login Xray Ssh Mod Terbalik
 - Cek Setiap User ,quota use Xray
 - Backup Via Email/Github
 - Webmin
+- 443, 8443, 2083, 2087 - Double port All Tls & tcp& grpc ## New
+- 80, 8080, 8880, 2086 - Double port All None tls ## New
 - Notif Update Script /auto update
 - Update By Keting Tong !!!
 ```
