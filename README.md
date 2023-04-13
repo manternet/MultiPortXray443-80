@@ -50,7 +50,7 @@ Need Permision To Install
 ## <img src="https://img.shields.io/badge/-Services%20%26%20Port-brightgreen">
 
 - OpenSSH                    : 80,22
-- OpenVPN                    : TCP 1194, UDP 2200
+- OpenVPN                    : TCP 1194, UDP 2200 SSL/TLS 443
 - Stunnel4 SSL/TLS           : 443, 777
 - Dropbear                   : 80, 109
 - Badvpn                     : 7100-7900
@@ -60,14 +60,18 @@ Need Permision To Install
 - OpenVPN-WS Epro            : 80 
 - OpenVPN-WS TLS Epro        : 443 
 # Xray Core
-- Vless Tcp XTLS             : 443
+- Vless Tcp XTLS             : 443, 8443, 2083, 2087 - Double port All Tls & tcp& grpc
 - Vmess Tcp Http TLS         : 443
+- Vless Tcp Http TLS         : 443
 - Trojan Tcp TLS             : 443
+- Vless H2 Tls               : 443
+- Vmess H2 Tls               : 443
+- Trojan H2 Tls              : 443
 - Vless Grpc Tls             : 443
 - Vmess Grpc Tls             : 443
 - Trojan Grpc Tls            : 443
 - Shdwsck-22 Grpc TLS        : 443
-- Vless Ws Tls & None        : 443,80
+- Vless Ws Tls & None        : 443,80, 8080, 8880, 2086 - Double port All None tls
 - Vmess Ws Tls & None        : 443,80
 - Trojan Ws Tls & None       : 443,80
 - Shdwsck-22 Ws Tls & None   : 443,80
@@ -82,6 +86,7 @@ Need Permision To Install
 
 ```diff
 - Menu Change port All
+- Xray Vless Ws Dynamic Path /vless/?/-whatever
 - Cek User Login Xray Ssh Mod Terbalik
 - Cek Setiap User ,quota use Xray
 - Backup Via Email/Github
@@ -122,7 +127,7 @@ Need Permision To Install
 </p>
 </b>
 <p align="center">
-<img src="https://github.com/manternet/MultiPortXray443-80/blob/7b77ac41c83b04428b6567d628d4a41980bd3644/IMG_20221119_043729.jpg" width="400" title="Autoscript">
+<img src="https://github.com/manternet/MultiPortXray443-80/blob/a1969dab3320a71ce27f26fde2097fc04ad846dd/IMG_20230414_043507.jpg" width="400" title="Autoscript">
 </p>
 </b>
 <p align="center">
