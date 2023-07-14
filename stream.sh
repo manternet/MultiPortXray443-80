@@ -3,7 +3,7 @@
 # ==================================================================
 # Name : VPN Script Quick Installation Script
 # Base : ****
-# Mod By : Manternet
+# Mod By : ****
 # ==================================================================
 
 # // Export Color & Information
@@ -26,7 +26,6 @@ export OKEY="[${GREEN} OKEY ${NC}]";
 # // Lag
 export LANG="en_US.UTF-8";
 export LANGUAGE="en_US.UTF-8"
-export LC_ALL="en_US.UTF-8";
 
 clear
 echo -e "
@@ -34,7 +33,7 @@ echo -e "
         ${PS1} CHECKING MEDIA STREAM UNLOCKER
          Time = $(date)
 
-         WELCOME TO MANTERNET VPN Script V2.0${LIGHT}
+         ${LIGHT}
   ---------------------------------------------------${LIGHT}";
 
 function InstallJQ() {
