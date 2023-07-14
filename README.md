@@ -83,6 +83,7 @@ Need Permision To Install
 - Xray SlowDns Vless         : 443, 53 
 - Xray SlowDns Vmess         : 443, 53 
 - Xray SlowDns Trojan        : 443, 53 
+- Ssh Udp-Custom             : 1-65535
 
 ```diff
 - Menu Change port All
