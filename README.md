@@ -96,6 +96,7 @@ Need Permision To Install
 - 80, 8080, 8880, 2086 - Double port All None tls ## New
 - Notif Update Script /auto update
 - Update By Keting Tong !!!
+- New Xray Vless Support Warp Cloudflare *Wireguard*
 ```
 ## <img src="https://img.shields.io/badge/Coming_Soon-%20Update-green"></img>
 
@@ -105,9 +106,9 @@ Need Permision To Install
 
 ## Credit :
 
--   Owner Keting Now Mantr Pencen
--   Original Script by Tidak Tahu Orangnya Horas Mungkin 
--   Modded and update Script by t.me/Manternet
+-   Owner Keting 
+-   Original Script by GitHub
+-   Modded and update Script by t.me/***
 	
 	
 	            
