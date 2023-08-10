@@ -52,10 +52,11 @@ Need Permision To Install
 
 - OpenSSH                    : 80,22
 - OpenVPN                    : TCP 1194, UDP 2200 SSL/TLS 443
-- Stunnel4 SSL/TLS           : 443, 777
+- Stunnel5 SSL/TLS           : 443, 777
 - Dropbear                   : 80, 109
 - Badvpn                     : 7100-7900
 - Nginx File                 : 85
+- Haproxy                    : 2091, 2092
 - WebScket Epro NONE         : 80
 - WebScket Epro SSL/TLS      : 443
 - OpenVPN-WS Epro            : 80 
@@ -90,7 +91,7 @@ Need Permision To Install
 
 ```diff
 - Menu Change port All
-- Xray Vless Ws Dynamic Path /vless/?/-whatever ## New
+- Xray Vless Ws Path /vless/?/-whatever ## New
 - Cek User Login Xray Ssh Mod Terbalik
 - Cek Setiap User ,quota use Xray
 - Backup Via Email/Github
