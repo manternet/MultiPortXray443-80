@@ -304,8 +304,5 @@ fi
 
 echo -e "";
 echo -e "  ${LIGHT}---------------------------------------------------${NC}"
-echo -e "";
-echo -e -n " Press ( ${BLUE}Enter${NC} ) To Back Menu"; read menu
-menu
 
 
