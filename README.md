@@ -56,13 +56,13 @@ Need Permision To Install
 - Dropbear                   : 80, 109
 - Badvpn                     : 7100-7900
 - Nginx File                 : 85
-- Haproxy                    : 2091, 2092
+- Haproxy                    : null, null
 - WebScket Epro NONE         : 80
 - WebScket Epro SSL/TLS      : 443
 - OpenVPN-WS Epro            : 80 
 - OpenVPN-WS TLS Epro        : 443 
 # Xray Core
-- New Vless Ws None&Tls&Grpc Warp Cloudflare ( wireguard )
+- New Vless Ws None&Tls&Grpc Warp Cloudflare ( cloud ip 104. )
 - 
 - Vless Tcp XTLS Vision      : 443, 8443, 2083, 2087 - Double port All Tls & tcp& grpc
 - Vmess Tcp Http TLS         : 443
