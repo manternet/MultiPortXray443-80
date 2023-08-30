@@ -91,6 +91,7 @@ Need Permision To Install
 
 ```diff
 - Menu Change port All
+- Bot Telegram for Create Config by scvps 
 - Xray Vless Ws Path /vless/?/-whatever ## New
 - Cek User Login Xray Ssh Mod Terbalik
 - Cek Setiap User ,quota use Xray
