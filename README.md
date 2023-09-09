@@ -51,7 +51,9 @@ Need Permision To Install
 ## <img src="https://img.shields.io/badge/-Services%20%26%20Port-brightgreen">
 
 - OpenSSH                    : 80,22
-- OpenVPN                    : TCP 1194, UDP 2200 SSL/TLS 443
+- OpenVPN                    : TCP 80, 1194
+- OpenVPN                    : UDP 80,443,2200 ( BETA ) new
+- OpenVPN                    : SSL/TLS 443,442
 - Stunnel5 SSL/TLS           : 443, 777
 - Dropbear                   : 80, 109
 - Badvpn                     : 7100-7900
@@ -79,6 +81,8 @@ Need Permision To Install
 - Vmess Ws Tls & None        : 443,80
 - Trojan Ws Tls & None       : 443,80
 - Shdwsck-22 Ws Tls & None   : 443,80
+# Wireguard new
+- Wireguard                  : 443,80,7070 ( BETA TESTER)
 # Trojan-Go
 - Trojan-Go Ws Tls           : 443 - Beta
 # Slow Dns 
