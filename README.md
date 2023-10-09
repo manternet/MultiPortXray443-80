@@ -30,8 +30,8 @@ Need Permision To Install
 	
 ## Info 
 ```diff
-- SSHVPN & XRAY OVER TCP
-- TELEGRAM=
+- SSHVPN & XRAY & WIREGUARD & TROJAN-GO OVER TCP
+- TELEGRAM=FALLBACK-TCP
 ```
 - made by the owner (...), 
 - it was made by mybro, I'm sorry if there is a failure in the script, 
@@ -51,14 +51,14 @@ Need Permision To Install
 ## <img src="https://img.shields.io/badge/-Services%20%26%20Port-brightgreen">
 
 - OpenSSH                    : 80,22
-- OpenVPN                    : TCP 80, 1194
-- OpenVPN                    : UDP 80,443,2200 ( BETA ) new
-- OpenVPN                    : SSL/TLS 443,442
+- OpenVPN TCP                : 80, 1194
+- OpenVPN UDP                : 80,2200 ( BETA ) new
+- OpenVPN SSL/TLS            : 443,442
 - Stunnel5 SSL/TLS           : 443, 777
 - Dropbear                   : 80, 109
-- Badvpn                     : 7100-7900
+- Badvpn                     : 7100-7300
 - Nginx File                 : 85
-- Haproxy                    : null, null
+- Caddy                      : null, null
 - WebScket Epro NONE         : 80
 - WebScket Epro SSL/TLS      : 443
 - OpenVPN-WS Epro            : 80 
@@ -82,7 +82,7 @@ Need Permision To Install
 - Trojan Ws Tls & None       : 443,80
 - Shdwsck-22 Ws Tls & None   : 443,80
 # Wireguard new
-- Wireguard                  : 443,80,7070 ( BETA TESTER)
+- Wireguard                  : 443,7070 ( BETA TESTER)
 # Trojan-Go
 - Trojan-Go Ws Tls           : 443 - Beta
 # Slow Dns 
