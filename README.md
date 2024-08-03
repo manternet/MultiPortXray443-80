@@ -77,8 +77,14 @@ Need Permision To Install
 - Vmess Grpc Tls             : 443
 - Trojan Grpc Tls            : 443
 - Shdwsck-22 Grpc TLS        : 443
+- Vless Http Upgrade *NEW*   : 443
+- Vmess Http Upgrade *NEW*   : 443
+- Trojan Http Upgrade *NEW*  : 443
+- Vless Split Http *NEW*     : 443
+- Vmess Split Http *NEW*     : 443
+- Trojan Split Http *NEW*    : 443
 - Vless Ws Tls & None        : 443,80, 8080, 8880, 2086 - Double port All None tls
-- Vmess Ws Tls & None        : 443,80
+- Vmess Ws Tls & None & Http Upgrade   : 443,80
 - Trojan Ws Tls & None       : 443,80
 - Shdwsck-22 Ws Tls & None   : 443,80
 # Wireguard new
