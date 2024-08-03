@@ -92,11 +92,11 @@ Need Permision To Install
 # Trojan-Go
 - Trojan-Go Ws Tls           : 443 - Beta
 # Slow Dns 
-- Ssh WS TLS SlowDns         : 443, 53
-- Xray SlowDns Tcp           : 443, 53 
-- Xray SlowDns Vless         : 443, 53 
-- Xray SlowDns Vmess         : 443, 53 
-- Xray SlowDns Trojan        : 443, 53 
+- Ssh SlowDns         : 80, 8080, 8880, 2086, 53
+- Xray SlowDns Tcp           : 80, 8080, 8880, 2086, 53 
+- Xray SlowDns Vless         : 80, 8080, 8880, 2086, 53 
+- Xray SlowDns Vmess         : 80, 8080, 8880, 2086, 53 
+- Xray SlowDns Trojan        : 80, 8080, 8880, 2086, 53 
 - Ssh Udp-Custom             : 1-65535
 
 ```diff
